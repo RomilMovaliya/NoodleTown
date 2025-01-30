@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card View</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-between; /* Spaces cards evenly in the row */
+            flex-wrap: wrap; /* Allows the cards to wrap if there is not enough space */
+            margin-top: 50px;
+        }
+
+        .card {
+            width: 30%; /* Set the width of each card to take up 30% of the container */
+            height: 350px;
+            margin: 10px 0; /* Add margin to separate cards vertically */
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 8px 16px;
+            flex-grow: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        h3 {
+            margin-bottom: 8px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 13px;
+            line-height: 1.4;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+   <div class="card-container">
+        <div class="card">
+            <img src="./images/image3.jpg" alt="Card Image">
+            <div class="card-content">
+                <h3>Card 1</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur aoluptatem error?</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/image4.jpg" alt="Card Image">
+            <div class="card-content">
+                <h3>Card 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur aoluptatem error?</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/image2.jpg" alt="Card Image">
+            <div class="card-content">
+                <h3>Card 3</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur aoluptatem error?</p>
+            </div>
+        </div>
+   </div>
+
+</body>
+</html>

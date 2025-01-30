@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Box</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            width: 500px;
+            border: 2px solid #ffc107; /* Yellow border */
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .search-container select {
+            border: none;
+            outline: none;
+            padding: 10px;
+            background: transparent;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .search-container input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .search-container .search-icon {
+            padding: 10px;
+            background: transparent;
+            font-size: 16px;
+            color: gray;
+        }
+
+        .gap{
+            margin-left: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <select>
+            <option>Surat</option>
+            <option>Ahmedabad</option>
+            <option>Vadodara</option>
+        </select>
+        <div class="gap">
+            |
+        </div>
+        
+        <span class="search-icon"><i class="fa-solid fa-magnifying-glass" style="color: black;"></i></span>
+        <input type="text" placeholder="Search for restaurant, cuisine, place">
+    </div>
+
+</body>
+</html>

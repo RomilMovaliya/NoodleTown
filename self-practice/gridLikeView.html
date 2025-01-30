@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .foodpic2 {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            max-width: 600px; /* Adjust as needed */
+            margin: auto;
+            padding: 10px;
+        }
+
+        .container1 {
+            flex: 2.25; /* Takes more space */
+            border: 2px solid black;
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            flex: 1; /* Takes less space */
+            gap: 10px;
+        }
+
+        .container1 img,
+        .container2 img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+    
+    </style>
+</head>
+<body>
+
+    <div class="foodpic2">
+        <div class="container1">
+            <h1>buy 2 get 1 free</h1>
+        </div>
+        <div class="container2">
+            <img src="../images/food2.jpg" alt="img2">
+            <img src="../images/food1.jpg" alt="img3">
+        </div>
+    </div>
+
+</body>
+</html>
